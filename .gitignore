@@ -27,7 +27,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Environment variables
+# Environment variables & Credentials
 .env
 .env.local
 .env.development.local
@@ -35,6 +35,9 @@ pnpm-debug.log*
 .env.production.local
 backend/.env
 frontend/.env.local
+*service-account*.json
+firebase-service-account.json
+
 
 # IDE & OS
 .vscode/
