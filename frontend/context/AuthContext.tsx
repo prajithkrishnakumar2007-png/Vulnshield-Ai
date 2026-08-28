@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { signInWithPopup, signOut as firebaseSignOut, onAuthStateChanged, User as FirebaseUser } from "firebase/auth";
+import { signInWithPopup, signInWithRedirect, getRedirectResult, signOut as firebaseSignOut, onAuthStateChanged, User as FirebaseUser } from "firebase/auth";
 import { auth, googleProvider } from "../lib/firebase";
 import { fetchApi } from "../lib/api";
 import { User } from "../lib/types";
@@ -118,7 +118,18 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const signInWithGoogle = async () => {
-    const result = await signInWithPopup(auth, googleProvider);
+    let result;
+    try {
+      result = await signInWithPopup(auth, googleProvider);
+    } catch (popupErr: any) {
+      if (popupErr.code === "auth/popup-blocked" || popupErr.code === "auth/cancelled-popup-request") {
+        console.warn("Popup blocked by browser, falling back to signInWithRedirect...");
+        await signInWithRedirect(auth, googleProvider);
+        return {} as User;
+      }
+      throw popupErr;
+    }
+
     const idToken = await result.user.getIdToken();
     
     if (typeof window !== "undefined") {
