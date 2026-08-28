@@ -1,0 +1,52 @@
+[
+  {
+    "cve": "CVE-2023-34362",
+    "plugin_name": "MOVEit Transfer SQL Injection Vulnerability",
+    "synopsis": "The remote host is running MOVEit Transfer with an unauthenticated SQL injection vulnerability leading to remote code execution.",
+    "host": "192.168.10.45",
+    "severity": "4",
+    "cvss_base_score": 9.8,
+    "epss": 0.96,
+    "in_kev": true
+  },
+  {
+    "cve": "CVE-2023-23397",
+    "plugin_name": "Microsoft Outlook NTLM Elevation of Privilege",
+    "synopsis": "Microsoft Outlook contains a privilege escalation vulnerability where a specially crafted email triggers NTLM authentication hash leaking.",
+    "host": "192.168.10.12",
+    "severity": "4",
+    "cvss_base_score": 9.8,
+    "epss": 0.89,
+    "in_kev": true
+  },
+  {
+    "cve": "CVE-2024-30078",
+    "plugin_name": "Windows Wi-Fi Driver Remote Code Execution",
+    "synopsis": "An unauthenticated attacker can send a malicious network packet to an adjacent Wi-Fi device to execute arbitrary code.",
+    "host": "10.0.4.88",
+    "severity": "3",
+    "cvss_base_score": 8.8,
+    "epss": 0.52,
+    "in_kev": true
+  },
+  {
+    "cve": "CVE-2021-34527",
+    "plugin_name": "PrintNightmare Windows Print Spooler RCE",
+    "synopsis": "The Windows Print Spooler service improperly performs privilege checks, allowing remote code execution with SYSTEM rights.",
+    "host": "192.168.10.5",
+    "severity": "4",
+    "cvss_base_score": 8.8,
+    "epss": 0.91,
+    "in_kev": true
+  },
+  {
+    "cve": "CVE-2022-41040",
+    "plugin_name": "Microsoft Exchange Server SSRF Vulnerability (ProxyNotShell)",
+    "synopsis": "Microsoft Exchange Server is affected by a Server-Side Request Forgery vulnerability allowing authenticated power users to execute remote commands.",
+    "host": "192.168.10.8",
+    "severity": "3",
+    "cvss_base_score": 8.8,
+    "epss": 0.74,
+    "in_kev": true
+  }
+]

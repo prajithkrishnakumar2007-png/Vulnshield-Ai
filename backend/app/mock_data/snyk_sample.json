@@ -1,0 +1,52 @@
+[
+  {
+    "cve_id": "CVE-2021-44228",
+    "title": "Log4Shell Remote Code Execution in Apache Log4j",
+    "description": "Apache Log4j2 2.0-beta9 through 2.15.0 JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints.",
+    "packageName": "org.apache.logging.log4j:log4j-core",
+    "severity": "CRITICAL",
+    "cvssScore": 10.0,
+    "epss_score": 0.975,
+    "kev_flag": true
+  },
+  {
+    "cve_id": "CVE-2024-21626",
+    "title": "runc Container Breakout via Workdir Leaked File Descriptor",
+    "description": "In runc 1.1.11 and earlier, process.cwd can be configured to point to a file descriptor path in /proc/self/fd, allowing attackers to escape container sandbox.",
+    "packageName": "github.com/opencontainers/runc",
+    "severity": "CRITICAL",
+    "cvssScore": 8.6,
+    "epss_score": 0.78,
+    "kev_flag": true
+  },
+  {
+    "cve_id": "CVE-2023-4863",
+    "title": "Libwebp Heap Buffer Overflow in WebP Image Processing",
+    "description": "Heap buffer overflow in WebP in Google Chrome prior to 116.0.5845.187 allowed remote attacker to perform out-of-bounds memory write via a crafted HTML page.",
+    "packageName": "libwebp-sys",
+    "severity": "HIGH",
+    "cvssScore": 8.8,
+    "epss_score": 0.65,
+    "kev_flag": true
+  },
+  {
+    "cve_id": "CVE-2023-32378",
+    "title": "Prototype Pollution in Lodash Template Parser",
+    "description": "Lodash before 4.17.21 allows prototype pollution via template function with user-controlled input properties.",
+    "packageName": "lodash",
+    "severity": "MEDIUM",
+    "cvssScore": 5.3,
+    "epss_score": 0.08,
+    "kev_flag": false
+  },
+  {
+    "cve_id": "CVE-2022-22965",
+    "title": "Spring4Shell Remote Code Execution in Spring Framework",
+    "description": "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution via data binding.",
+    "packageName": "org.springframework:spring-beans",
+    "severity": "CRITICAL",
+    "cvssScore": 9.8,
+    "epss_score": 0.94,
+    "kev_flag": true
+  }
+]
