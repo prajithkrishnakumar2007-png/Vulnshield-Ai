@@ -43,7 +43,7 @@ export default function LandingPage() {
             Sign In
           </Link>
           <Link
-            href="/dashboard"
+            href="/login"
             className="px-5 py-2.5 rounded-lg bg-cyan text-black font-bold font-mono text-xs hover:bg-cyan/90 glow-cyan transition-all flex items-center gap-2"
           >
             Launch Ops Console <ArrowRight className="w-4 h-4" />
@@ -72,13 +72,13 @@ export default function LandingPage() {
 
           <div className="flex flex-wrap items-center gap-4 pt-4">
             <Link
-              href="/dashboard"
+              href="/login"
               className="px-6 py-3.5 rounded-xl bg-cyan text-black font-bold font-mono text-sm hover:bg-cyan/90 glow-cyan transition-all flex items-center gap-2 shadow-lg"
             >
               Explore Live Dashboard <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/vulnerabilities"
+              href="/login"
               className="px-6 py-3.5 rounded-xl glass-panel text-cyan border border-cyan/40 hover:bg-cyan/10 font-mono text-sm transition-all flex items-center gap-2"
             >
               View Triage Matrix <ArrowRight className="w-4 h-4" />
